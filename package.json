@@ -1,6 +1,7 @@
 {
   "name": "lod-cockpit",
   "version": "0.1.0",
+  "homepage": "https://vliz-be-opsci.github.io/lod-cockpit",
   "private": true,
   "dependencies": {
     "chart.js": "^4.4.0",
@@ -17,6 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-and-serve": "npm run build && npm run serve"
   },
   "eslintConfig": {
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
