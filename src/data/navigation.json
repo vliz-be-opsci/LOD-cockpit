@@ -1,0 +1,54 @@
+[
+    {
+        "title": "LDES",
+        "items": [
+            {
+                "title":"Overview",
+                "url": "#LDES"
+            },
+            {
+                "title":"Documentation",
+                "url": "/docs#LDES"
+            }
+        ]
+    },
+    {
+        "title": "RO-spaces",
+        "items": [
+            {
+                "title":"Overview",
+                "url": "#RO-spaces"
+            },
+            {
+                "title":"Documentation",
+                "url": "/docs#RO-spaces"
+            }
+        ]
+    },
+    {
+        "title": "gh-actions",
+        "items": [
+            {
+                "title":"Overview",
+                "url": "#gh-actions"
+            },
+            {
+                "title":"Documentation",
+                "url": "/docs#g-actions"
+            }
+        ]
+    },
+    {
+        "title": "SPARQL Endpoints",
+        "items": [
+            {
+                "title":"Overview",
+                "url": "#SPARQL-Endpoints"
+            },
+            {
+                "title":"Documentation",
+                "url": "/docs#SPARQL-Endpoints"
+            }
+        ]
+    }
+]

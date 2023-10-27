@@ -1,0 +1,29 @@
+/*have the second parent of sidebar_status be with border left 3px */
+.status--pass  {
+    border-top: 5px solid #00c853;
+}
+
+.status--fail {
+    border-top: 5px solid #ff1744;
+}
+
+
+.status--fail--sideline {
+    text-decoration: underline #ff1744;
+}
+
+
+.item__box {
+    margin-bottom: 10px;
+    border-right: 10px solid #e0e0e0;
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
