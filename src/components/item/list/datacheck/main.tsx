@@ -24,6 +24,26 @@ export default function DataCheckMain(props) {
         }
     }
 
+    //reorder the items so that the failed items are on top
+    let failed_items = [];
+    let passed_items = [];
+    for (let i = 0; i < item.items.length; i++) {
+        const element = item.items[i];
+        let status = "pass";
+        for (let j = 0; j < element.tests.length; j++) {
+            const test = element.tests[j];
+            if (test.status == "fail") {
+                status = "fail";
+            }
+        }
+        if (status == "fail") {
+            failed_items.push(element);
+        } else {
+            passed_items.push(element);
+        }
+    }
+    item.items = failed_items.concat(passed_items);
+
 
     return (
         <>
@@ -47,9 +67,7 @@ export default function DataCheckMain(props) {
                                     }
                                 }
 
-
                                 //make the doughnut data 
-
                                 let data = {};
                                 let failed = 0;
                                 let passed = 0;
@@ -74,8 +92,35 @@ export default function DataCheckMain(props) {
                                     borderWidth: 1
                                 }]
 
+                                //based on how many failed tests there are choose if the col-lg should be 6 or 4
+                                //base decision of devisible by 3 or not
+                                let failed_items  = 0;
+                                for (let i = 0; i < item.items.length; i++) {
+                                    const element = item.items[i];
+                                    let status = "pass";
+                                    for (let j = 0; j < element.tests.length; j++) {
+                                        const test = element.tests[j];
+                                        if (test.status == "fail") {
+                                            status = "fail";
+                                            continue;
+                                        }
+                                    }
+                                    if (status == "fail") {
+                                        failed_items++;
+                                    }
+                                }
+                                let col_width = 6;
+                                if (failed_items % 3 == 0) {
+                                    col_width = 4;
+                                }
+
+                                //if status--css--test is status--pass then col_width should be 3
+                                if (status_css_test == "status--pass") {
+                                    col_width = 3;
+                                }
+
                                 return(
-                                    <div className={`col-lg-3 field__item ${status_css_test} item__box`}>
+                                    <div className={`col-lg-${col_width} field__item ${status_css_test} item__box`}>
                                         <div className="pb-2 pt-2 paragraph paragraph--type--container paragraph--view-mode--default">
                                             <div className="row field__items included-item-list">
                                                 <div className="col-lg-4">
