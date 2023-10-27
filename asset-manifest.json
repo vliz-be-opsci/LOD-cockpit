@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/lod-cockpit/static/css/main.5361d06f.css",
-    "main.js": "/lod-cockpit/static/js/main.9626b5a2.js",
+    "main.js": "/lod-cockpit/static/js/main.a5398047.js",
     "static/media/fedora29.jpg": "/lod-cockpit/static/media/fedora29.22e1bf986b887e177f00.jpg",
     "static/media/Vlaanderen_verbeelding werkt.png": "/lod-cockpit/static/media/Vlaanderen_verbeelding werkt.3ce64e1acf0632a60e4b.png",
     "static/media/west_vlaanderen_logo.png": "/lod-cockpit/static/media/west_vlaanderen_logo.c603034f6b00843f9519.png",
     "index.html": "/lod-cockpit/index.html",
     "main.5361d06f.css.map": "/lod-cockpit/static/css/main.5361d06f.css.map",
-    "main.9626b5a2.js.map": "/lod-cockpit/static/js/main.9626b5a2.js.map"
+    "main.a5398047.js.map": "/lod-cockpit/static/js/main.a5398047.js.map"
   },
   "entrypoints": [
     "static/css/main.5361d06f.css",
-    "static/js/main.9626b5a2.js"
+    "static/js/main.a5398047.js"
   ]
 }
