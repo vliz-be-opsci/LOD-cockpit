@@ -1,0 +1,14 @@
+{
+    "styles": [
+        {
+            "file": "css/custom_style.css",
+            "inject":true
+        }
+    ],
+    "scripts":[
+        {
+            "file":"js/script_one.js",
+            "inject":true
+        }
+    ]
+}
