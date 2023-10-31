@@ -20,4 +20,7 @@ jobs:
             - name: run python tests
               run: python backend/python/main.py
             - name: Build and Deploy
-              run: npm run deploy
+              run: |
+                  git config --global user.name "${GITHUB_ACTOR}"
+                  git config --global user.email "${GITHUB_ACTOR}"@users.noreply.github.com
+                  npm run build
