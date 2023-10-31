@@ -1,2 +1,8 @@
 node_modules
 build
+
+#all __pycache__ folders
+**/__pycache__
+
+#all logs.txt files
+logs.txt

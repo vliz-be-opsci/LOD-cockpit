@@ -42,6 +42,8 @@ Development
 
 To start the development server and work on your React app, follow these steps:
 
+0. Check in the package.json file if the homepage is set to the correct url. If you are developing locally, this should be empty. If you are developing on a server, this should be the url of the server.
+
 1.  Run the development server using npm:
     
     bashCopy code
