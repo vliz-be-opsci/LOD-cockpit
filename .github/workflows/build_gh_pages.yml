@@ -18,6 +18,6 @@ jobs:
             - name: Install python dependencies
               run: pip install -r backend/python/requirements.txt
             - name: run python tests
-              run: pytest backend/python/main.py
+              run: python backend/python/main.py
             - name: Build and Deploy
               run: npm run deploy
